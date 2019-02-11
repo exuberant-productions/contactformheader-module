@@ -1,5 +1,11 @@
 {
   "name": "contactformheader-module",
+  "babel": {
+    "presets": [
+      "@babel/env",
+      "@babel/react"
+    ]
+  },
   "version": "1.0.0",
   "description": "Handles the header and contact form of the page",
   "main": "index.js",
@@ -25,6 +31,8 @@
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.5",
     "cors": "^2.8.5",
+    "enzyme": "^3.8.0",
+    "enzyme-adapter-react-16": "^1.9.1",
     "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor",
     "express": "^4.16.4",
     "jest": "^24.1.0",
