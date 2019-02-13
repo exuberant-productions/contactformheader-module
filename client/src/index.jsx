@@ -1,26 +1,9 @@
-import React from "react";
-import ReactDOM from "react-dom";
+/* eslint-env browser */
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './components/App.jsx';
 
-class App extends React.Component{
-  constructor(props) {
-    super(props);
-    this.state = {
-
-    };
-  }
-
-  render() {
-    return (
-      <div className="test">
-        HELLO WORLD
-      </div>
-    );
-  }
-}
-
-// ReactDOM.render(
-//   <App />,
-//   document.getElementById('app')
-// );
-
-export default App;
+ReactDOM.render(
+  <App />,
+  document.getElementById('app'),
+);
