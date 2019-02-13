@@ -55,6 +55,7 @@ button[name=preQualify] {
   color: white;
   padding: 5px 10px;
   transition: background-color 0.25s;
+  outline: none;
 }
 
 button[name=preQualify]:hover {
@@ -205,6 +206,7 @@ button[name=requestInfo] {
   border-radius: 4px;
   border: 0px solid;
   transition: opacity 0.15s;
+  outline: none;
 }
 
 button[name=requestInfo]:hover {
@@ -222,4 +224,162 @@ footer[name=formFooter] {
 
 ::placeholder {
   color: #B1B6BA;
+}
+
+
+
+
+
+
+
+
+div[name=agentInfo] {
+  font-family: postGrotesk;
+  margin-left: 190px;
+  margin-top: 50px;
+  font-size: 13px;
+  display: inline-block;
+}
+
+h1[name=contactInfo] {
+  padding-bottom: 1px;
+}
+
+input[name=listingAgentButton] {
+  display: inline-block;
+  margin-right: 10px;
+  height: 55px;
+}
+
+div[name=contactInfo] {
+  display: inline-block;
+  padding: 10px 10px;
+}
+
+div[name=agentName] {
+  color: #10A75F;
+}
+
+div[name=agentPhone] {
+  color: #3B4144;
+}
+
+div[name=agentType] {
+  color: #869099;
+}
+
+div[name=ranking] {
+  color: #FBB100;
+}
+
+div[name=sales] {
+  color: #869099;
+}
+
+div[name=stats] {
+  display: inline-block;
+  padding-left: 20px;
+}
+
+ul[name=list] {
+  list-style: none;
+  padding-left: 0px;
+  margin-top: 0px;
+}
+
+li[name=listItem] {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+div[name=contactFormBottom] {
+  height: 450px;
+  width: 300px;
+  padding: 7px 260px;
+  font-family: postGrotesk;
+  display: inline-block;
+}
+
+input[name=nameBottom] {
+  width: 470px;
+  border-radius: 4px;
+  padding: 7px 7px;
+  font-size: 12px;
+  border: 1px solid #CCD1D3;
+  margin: 2px 2px;
+}
+
+input[name=nameBottom]:focus {
+  border-color: #21BF63;
+  outline: none;
+}
+
+input[name=phoneBottom] {
+  width: 470px;
+  border-radius: 4px;
+  padding: 7px 7px;
+  font-size: 12px;
+  border: 1px solid #CCD1D3;
+  margin: 2px 2px;
+}
+
+input[name=phoneBottom]:focus {
+  border-color: #21BF63;
+  outline: none;
+}
+
+input[name=emailBottom] {
+  width: 470px;
+  border-radius: 4px;
+  padding: 7px 7px;
+  font-size: 12px;
+  border: 1px solid #CCD1D3;
+  margin: 2px 2px;
+}
+
+input[name=emailBottom]:focus {
+  border-color: #21BF63;
+  outline: none;
+}
+
+textarea[name=messageBottom] {
+  border-radius: 4px;
+  padding: 7px 9px;
+  font-size: 12px;
+  border: 1px solid #CCD1D3;
+  margin: 2px 2px;
+  width: 470px;
+  height: 60px;
+  overflow: scroll;
+}
+
+textarea[name=messageBottom]:focus {
+  border-color: #21BF63;
+  outline: none;
+}
+
+button[name=requestInfoBottom] {
+  background-color: #F74A27;
+  color: white;
+  width: 470px;
+  padding: 7px 9px;
+  margin: 2px 2px;
+  font-size: 17px;
+  border-radius: 4px;
+  border: 0px solid;
+  transition: opacity 0.15s;
+  outline: none;
+}
+
+button[name=requestInfoBottom]:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+footer[name=formFooterBottom] {
+  color: #B4BAC0;
+  font-size: 10px;
+  width: 470px;
+  margin: 10px 2px;
+  font-weight: 0;
 }
