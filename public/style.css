@@ -1,0 +1,101 @@
+div[name=contactForm] {
+  border: 1px solid #ccc;
+  height: 450px;
+  width: 300px;
+  padding: 7px 15px;
+}
+
+h1[name=formHeader] {
+  font-size: 20px;
+}
+
+input[name=name] {
+  border-radius: 4px;
+  padding: 7px 7px;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  margin: 2px 2px;
+}
+
+input[name=name]:focus {
+  border-color: #21BF63;
+  outline: none;
+}
+
+input[name=phone] {
+  border-radius: 4px;
+  padding: 7px 9px;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  margin: 2px 2px;
+}
+
+input[name=phone]:focus {
+  border-color: #21BF63;
+  outline: none;
+}
+
+input[name=email] {
+  border-radius: 4px;
+  padding: 7px 9px;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  margin: 2px 2px;
+  width: 292px;
+}
+
+input[name=email]:focus {
+  border-color: #21BF63;
+  outline: none;
+}
+
+input[name=message] {
+  border-radius: 4px;
+  padding: 7px 9px;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  margin: 2px 2px;
+  width: 292px;
+  height: 50px;
+}
+
+input[name=message]:focus {
+  border-color: #21BF63;
+  outline: none;
+}
+
+input[name=financing] {
+  margin: 10px 2px;
+}
+
+div[name=checkboxText] {
+  margin: 10px 5px;
+  display: inline-block;
+}
+
+button[name=requestInfo] {
+  background-color: #F74A27;
+  color: white;
+  width: 292px;
+  padding: 7px 9px;
+  margin: 2px 2px;
+  font-size: 20px;
+  border-radius: 4px;
+  border: 0px solid;
+  transition: opacity 0.15s;
+}
+
+button[name=requestInfo]:hover {
+  opacity: 0.7;
+}
+
+footer[name=formFooter] {
+  color: #B4BAC0;
+  font-size: 12px;
+  width: 292px;
+  margin: 10px 2px;
+}
+
+::placeholder {
+  color: #B1B6BA;
+}
