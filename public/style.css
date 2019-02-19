@@ -1,0 +1,385 @@
+@font-face {
+  font-family: postGrotesk;
+  src: url('./PostGrotesk-Book.ttf');
+}
+
+div[name=header] {
+  font-family: postGrotesk;
+  margin-left: 170px;
+  display: inline-block;
+  width: 100%;
+}
+
+div[name=location] {
+  display: inline-block;
+  margin: 1px 20px;
+}
+
+h1[name=address] {
+  font-size: 25px;
+  color: #3B4144;
+  margin-bottom: 2px;
+}
+
+h2[name=cityStateEtc] {
+  font-size: 15px;
+  color: #869099;
+  margin-top: 5px;
+}
+
+div[name=pricePoint] {
+  display: inline-block;
+  margin: 1px 50px;
+}
+
+h1[name=price] {
+  font-size: 25px;
+  color: #3B4144; 
+  margin-bottom: 2px;
+}
+
+h2[name=mortgage] {
+  font-size: 15px;
+  color: #3B4144;
+  margin-top: 5px;
+  display: inline-block;
+}
+
+button[name=preQualify] {
+  display: inline-block;
+  margin-left: 7px;
+  background-color: #21BF63;
+  border-radius: 4px;
+  border: 0px solid;
+  font-size: 13px;
+  color: white;
+  padding: 5px 10px;
+  transition: background-color 0.25s;
+  outline: none;
+}
+
+button[name=preQualify]:hover {
+  cursor: pointer;
+  background-color: #24d66e;
+}
+
+div[name=formDropdown] {
+  display: inline-block;
+  margin: 1px 60px;
+}
+
+h1[name=fakeButton] {
+  background-color: #F74A27;
+  border-radius: 4px;
+  text-align: center;
+  color: white;
+  font-size: 15px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  width: 275px;
+  margin-bottom: 1px;
+}
+
+h2[name=downArrow] {
+  padding-top: 1px;
+  padding-bottom: 3px;
+  padding-left: 130px;
+  margin-top: 1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+div[name=contactForm] {
+  border: 1px solid #ccc;
+  height: 450px;
+  width: 300px;
+  padding: 7px 15px;
+  font-family: postGrotesk;
+}
+
+h1[name=formHeader] {
+  font-size: 18px;
+  padding: 2px 2px;
+}
+
+input[name=name] {
+  border-radius: 4px;
+  padding: 7px 7px;
+  font-size: 12px;
+  border: 1px solid #CCD1D3;
+  margin: 2px 2px;
+}
+
+input[name=name]:focus {
+  border-color: #21BF63;
+  outline: none;
+}
+
+input[name=phone] {
+  border-radius: 4px;
+  padding: 7px 9px;
+  font-size: 12px;
+  border: 1px solid #CCD1D3;
+  margin: 2px 2px;
+}
+
+input[name=phone]:focus {
+  border-color: #21BF63;
+  outline: none;
+}
+
+input[name=email] {
+  border-radius: 4px;
+  padding: 7px 9px;
+  font-size: 12px;
+  border: 1px solid #CCD1D3;
+  margin: 2px 2px;
+  width: 292px;
+}
+
+input[name=email]:focus {
+  border-color: #21BF63;
+  outline: none;
+}
+
+input[name=message] {
+  border-radius: 4px;
+  padding: 7px 9px;
+  font-size: 12px;
+  border: 1px solid #CCD1D3;
+  margin: 2px 2px;
+  width: 292px;
+  height: 50px;
+  resize: both;
+  overflow: auto;
+}
+
+input[name=message]:focus {
+  border-color: #21BF63;
+  outline: none;
+}
+
+input[name=financing] {
+  margin: 10px 2px;
+}
+
+div[name=checkboxText] {
+  margin: 10px 5px;
+  display: inline-block;
+  font-size: 13px;
+}
+
+button[name=requestInfo] {
+  background-color: #F74A27;
+  color: white;
+  width: 292px;
+  padding: 7px 9px;
+  margin: 2px 2px;
+  font-size: 20px;
+  border-radius: 4px;
+  border: 0px solid;
+  transition: opacity 0.15s;
+  outline: none;
+}
+
+button[name=requestInfo]:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+footer[name=formFooter] {
+  color: #B4BAC0;
+  font-size: 12px;
+  width: 292px;
+  margin: 10px 2px;
+  font-weight: 0;
+}
+
+::placeholder {
+  color: #B1B6BA;
+}
+
+
+
+
+
+
+
+
+div[name=agentInfo] {
+  font-family: postGrotesk;
+  margin-left: 190px;
+  margin-top: 50px;
+  font-size: 13px;
+  display: inline-block;
+}
+
+h1[name=contactInfo] {
+  padding-bottom: 1px;
+}
+
+input[name=listingAgentButton] {
+  display: inline-block;
+  margin-right: 10px;
+  height: 55px;
+}
+
+div[name=contactInfo] {
+  display: inline-block;
+  padding: 10px 10px;
+}
+
+div[name=agentName] {
+  color: #10A75F;
+}
+
+div[name=agentPhone] {
+  color: #3B4144;
+}
+
+div[name=agentType] {
+  color: #869099;
+}
+
+div[name=ranking] {
+  color: #FBB100;
+}
+
+div[name=sales] {
+  color: #869099;
+}
+
+div[name=stats] {
+  display: inline-block;
+  padding-left: 20px;
+}
+
+ul[name=list] {
+  list-style: none;
+  padding-left: 0px;
+  margin-top: 0px;
+}
+
+li[name=listItem] {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+div[name=contactFormBottom] {
+  height: 450px;
+  width: 300px;
+  padding: 7px 260px;
+  font-family: postGrotesk;
+  display: inline-block;
+}
+
+input[name=nameBottom] {
+  width: 470px;
+  border-radius: 4px;
+  padding: 7px 7px;
+  font-size: 12px;
+  border: 1px solid #CCD1D3;
+  margin: 2px 2px;
+}
+
+input[name=nameBottom]:focus {
+  border-color: #21BF63;
+  outline: none;
+}
+
+input[name=phoneBottom] {
+  width: 470px;
+  border-radius: 4px;
+  padding: 7px 7px;
+  font-size: 12px;
+  border: 1px solid #CCD1D3;
+  margin: 2px 2px;
+}
+
+input[name=phoneBottom]:focus {
+  border-color: #21BF63;
+  outline: none;
+}
+
+input[name=emailBottom] {
+  width: 470px;
+  border-radius: 4px;
+  padding: 7px 7px;
+  font-size: 12px;
+  border: 1px solid #CCD1D3;
+  margin: 2px 2px;
+}
+
+input[name=emailBottom]:focus {
+  border-color: #21BF63;
+  outline: none;
+}
+
+textarea[name=messageBottom] {
+  border-radius: 4px;
+  padding: 7px 9px;
+  font-size: 12px;
+  border: 1px solid #CCD1D3;
+  margin: 2px 2px;
+  width: 470px;
+  height: 60px;
+  overflow: scroll;
+}
+
+textarea[name=messageBottom]:focus {
+  border-color: #21BF63;
+  outline: none;
+}
+
+button[name=requestInfoBottom] {
+  background-color: #F74A27;
+  color: white;
+  width: 470px;
+  padding: 7px 9px;
+  margin: 2px 2px;
+  font-size: 17px;
+  border-radius: 4px;
+  border: 0px solid;
+  transition: opacity 0.15s;
+  outline: none;
+}
+
+button[name=requestInfoBottom]:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+footer[name=formFooterBottom] {
+  color: #B4BAC0;
+  font-size: 10px;
+  width: 470px;
+  margin: 10px 2px;
+  font-weight: 0;
+}
