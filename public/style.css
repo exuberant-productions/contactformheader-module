@@ -1,13 +1,53 @@
-@font-face {
-  font-family: postGrotesk;
-  src: url('./PostGrotesk-Book.ttf');
+@font-face{
+  font-family:PostGroteskBook;
+  src:url(http://static.trulia-cdn.com/images/fonts/PostGroteskBook_20150623/PostGrotesk-Book.eot);
+  src:url(http://static.trulia-cdn.com/images/fonts/PostGroteskBook_20150623/PostGrotesk-Book.eot?#iefix) format("embedded-opentype")
+  ,url(http://static.trulia-cdn.com/images/fonts/PostGroteskBook_20150623/PostGrotesk-Book.woff) format("woff")
+  ,url(http://static.trulia-cdn.com/images/fonts/PostGroteskBook_20150623/PostGrotesk-Book.ttf) format("truetype")
+  ,url(http://static.trulia-cdn.com/images/fonts/PostGroteskBook_20150623/PostGrotesk-Book.svg#PostGroteskRegular) format("svg");
+  font-weight:400;
+  font-style:normal;
+  font-display:swap;
+}
+
+@font-face{
+  font-family:PostGroteskMedium;
+  src:url(http://static.trulia-cdn.com/images/fonts/PostGroteskMedium//PostGrotesk-Medium.eot);
+  src:url(http://static.trulia-cdn.com/images/fonts/PostGroteskMedium//PostGrotesk-Medium.eot?#iefix) format("embedded-opentype")
+  ,url(http://static.trulia-cdn.com/images/fonts/PostGroteskMedium//PostGrotesk-Medium.woff) format("woff")
+  ,url(http://static.trulia-cdn.com/images/fonts/PostGroteskMedium//PostGrotesk-Medium.ttf) format("truetype")
+  ,url(http://static.trulia-cdn.com/images/fonts/PostGroteskMedium//PostGrotesk-Medium.svg#PostGroteskBold) format("svg");
+  font-weight:600;
+  font-style:normal;
+  font-display:swap;
+}
+
+@font-face{
+  font-family: fontello;
+  src:url(http://s3-us-west-1.amazonaws.com/affordability-module/fontello.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0px;
+}
+
+div[name=wholeHeader] {
+  position: fixed;
 }
 
 div[name=header] {
-  font-family: postGrotesk;
-  margin-left: 170px;
+  font-family: PostGroteskBook;
+  font-weight: 1;
+  padding-left: 170px;
   display: inline-block;
+  background-color: white;
   width: 100%;
+}
+
+div[name=rc] {
+  padding-top: 180px;
 }
 
 div[name=location] {
@@ -19,12 +59,29 @@ h1[name=address] {
   font-size: 25px;
   color: #3B4144;
   margin-bottom: 2px;
+  font-weight: 1;
 }
 
 h2[name=cityStateEtc] {
   font-size: 15px;
   color: #869099;
-  margin-top: 5px;
+  font-weight: 1;
+  display: inline;
+}
+
+h2[name=neighborhood] {
+  font-size: 15px;
+  color: #869099;
+  font-weight: 1;
+  display: inline;
+  padding-left: 5px;
+  transition: color 0.25s;
+  text-decoration: underline;
+}
+
+h2[name=neighborhood]:hover {
+  cursor: pointer;
+  color: #bccbd8;
 }
 
 div[name=pricePoint] {
@@ -36,6 +93,7 @@ h1[name=price] {
   font-size: 25px;
   color: #3B4144; 
   margin-bottom: 2px;
+  font-weight: 1;
 }
 
 h2[name=mortgage] {
@@ -43,6 +101,7 @@ h2[name=mortgage] {
   color: #3B4144;
   margin-top: 5px;
   display: inline-block;
+  font-weight: 1;
 }
 
 button[name=preQualify] {
@@ -56,6 +115,7 @@ button[name=preQualify] {
   padding: 5px 10px;
   transition: background-color 0.25s;
   outline: none;
+  font-weight: 1;
 }
 
 button[name=preQualify]:hover {
@@ -66,6 +126,54 @@ button[name=preQualify]:hover {
 div[name=formDropdown] {
   display: inline-block;
   margin: 1px 60px;
+}
+
+input[name=dropdownname] {
+  border-radius: 4px;
+  padding: 7px 7px;
+  font-size: 12px;
+  border: 1px solid #CCD1D3;
+  margin: 2px 2px;
+  font-weight: 1;
+  width: 292px;
+}
+
+input[name=dropdownname]:focus {
+  border-color: #21BF63;
+  outline: none;
+}
+
+input[name=dropdownphone] {
+  border-radius: 4px;
+  padding: 7px 9px;
+  font-size: 12px;
+  border: 1px solid #CCD1D3;
+  margin: 2px 2px;
+  font-weight: 1;
+  width: 292px;
+}
+
+input[name=dropdownphone]:focus {
+  border-color: #21BF63;
+  outline: none;
+}
+
+textarea[name=dropdownmessage] {
+  border-radius: 4px;
+  padding: 7px 9px;
+  font-size: 12px;
+  border: 1px solid #CCD1D3;
+  margin: 2px 2px;
+  width: 292px;
+  height: 65px;
+  resize: both;
+  overflow: auto;
+  font-weight: 1;
+}
+
+textarea[name=dropdownmessage]:focus {
+  border-color: #21BF63;
+  outline: none;
 }
 
 h1[name=fakeButton] {
@@ -85,6 +193,38 @@ h2[name=downArrow] {
   padding-bottom: 3px;
   padding-left: 130px;
   margin-top: 1px;
+}
+
+div[name=dropdowncontactForm] {
+  border: 1px solid #ccc;
+  padding: 7px 15px;
+  margin-left: 30px;
+  position: fixed;
+  background-color: white;
+}
+
+h1[name=dropdownformHeader] {
+  text-align: center;
+  font-size: 18px;
+  padding: 2px 2px;
+  font-family: fontello;
+}
+
+div[name=dropdown] {
+  margin-left: 700px;
+  position: fixed;
+  padding: 7px 15px;
+}
+
+
+span[name=termsOfUse]{
+  color: #25AB66;
+  transition: color 0.25s;
+}
+
+span[name=termsOfUse]:hover {
+  cursor: pointer;
+  color: #24d66e;
 }
 
 
@@ -121,12 +261,13 @@ div[name=contactForm] {
   height: 450px;
   width: 300px;
   padding: 7px 15px;
-  font-family: postGrotesk;
+  font-family: PostGroteskBook;
 }
 
 h1[name=formHeader] {
   font-size: 18px;
   padding: 2px 2px;
+  font-weight: 1;
 }
 
 input[name=name] {
@@ -134,7 +275,8 @@ input[name=name] {
   padding: 7px 7px;
   font-size: 12px;
   border: 1px solid #CCD1D3;
-  margin: 2px 2px;
+  margin: 2px 2px;;
+  font-weight: 1
 }
 
 input[name=name]:focus {
@@ -148,6 +290,7 @@ input[name=phone] {
   font-size: 12px;
   border: 1px solid #CCD1D3;
   margin: 2px 2px;
+  font-weight: 1;
 }
 
 input[name=phone]:focus {
@@ -162,6 +305,7 @@ input[name=email] {
   border: 1px solid #CCD1D3;
   margin: 2px 2px;
   width: 292px;
+  font-weight: 1;
 }
 
 input[name=email]:focus {
@@ -169,7 +313,7 @@ input[name=email]:focus {
   outline: none;
 }
 
-input[name=message] {
+textarea[name=message] {
   border-radius: 4px;
   padding: 7px 9px;
   font-size: 12px;
@@ -179,9 +323,10 @@ input[name=message] {
   height: 50px;
   resize: both;
   overflow: auto;
+  font-weight: 1;
 }
 
-input[name=message]:focus {
+textarea[name=message]:focus {
   border-color: #21BF63;
   outline: none;
 }
@@ -194,6 +339,7 @@ div[name=checkboxText] {
   margin: 10px 5px;
   display: inline-block;
   font-size: 13px;
+  font-weight: 1;
 }
 
 button[name=requestInfo] {
@@ -207,6 +353,7 @@ button[name=requestInfo] {
   border: 0px solid;
   transition: opacity 0.15s;
   outline: none;
+  font-weight: 1;
 }
 
 button[name=requestInfo]:hover {
@@ -219,7 +366,7 @@ footer[name=formFooter] {
   font-size: 12px;
   width: 292px;
   margin: 10px 2px;
-  font-weight: 0;
+  font-weight: 1;
 }
 
 ::placeholder {
@@ -234,15 +381,17 @@ footer[name=formFooter] {
 
 
 div[name=agentInfo] {
-  font-family: postGrotesk;
+  font-family: PostGroteskBook;
   margin-left: 190px;
   margin-top: 50px;
   font-size: 13px;
   display: inline-block;
+  font-weight: 1;
 }
 
 h1[name=contactInfo] {
   padding-bottom: 1px;
+  font-weight: lighter;
 }
 
 input[name=listingAgentButton] {
@@ -253,7 +402,9 @@ input[name=listingAgentButton] {
 
 div[name=contactInfo] {
   display: inline-block;
-  padding: 10px 10px;
+  padding-left: 10px;
+  padding-top: 5px;
+  position: absolute;
 }
 
 div[name=agentName] {
@@ -278,7 +429,9 @@ div[name=sales] {
 
 div[name=stats] {
   display: inline-block;
-  padding-left: 20px;
+  padding-left: 120px;
+  padding-top: 17.5px;
+  position: absolute;
 }
 
 ul[name=list] {
@@ -295,9 +448,15 @@ li[name=listItem] {
 div[name=contactFormBottom] {
   height: 450px;
   width: 300px;
-  padding: 7px 260px;
-  font-family: postGrotesk;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 435px;
+  font-family: PostGroteskBook;
   display: inline-block;
+}
+
+span[name=reviews] {
+  color: #8A949D;
 }
 
 input[name=nameBottom] {
@@ -314,6 +473,13 @@ input[name=nameBottom]:focus {
   outline: none;
 }
 
+div[name=missingName] {
+  color: #E44427;
+  font-size: 10px;
+  padding-left: 5px;
+  padding-bottom: 3px;
+}
+
 input[name=phoneBottom] {
   width: 470px;
   border-radius: 4px;
@@ -328,6 +494,13 @@ input[name=phoneBottom]:focus {
   outline: none;
 }
 
+div[name=missingEmail] {
+  color: #E44427;
+  font-size: 10px;
+  padding-left: 5px;
+  padding-bottom: 3px;
+}
+
 input[name=emailBottom] {
   width: 470px;
   border-radius: 4px;
@@ -340,6 +513,13 @@ input[name=emailBottom] {
 input[name=emailBottom]:focus {
   border-color: #21BF63;
   outline: none;
+}
+
+div[name=missingPhone] {
+  color: #E44427;
+  font-size: 10px;
+  padding-left: 5px;
+  padding-bottom: 3px;
 }
 
 textarea[name=messageBottom] {
