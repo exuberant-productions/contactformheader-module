@@ -72,7 +72,7 @@ class Header extends React.Component {
       <div onClick={this.onClick}>
         <div name="wholeHeader">
           <div name='fakeHeader'>
-            <img src='header.png' height='92' width='1440'></img>
+            <img src='https://s3.us-east-2.amazonaws.com/dummyprofilepictures/header.png' height='92' width='1440'></img>
           </div>
           <div name="header" >
             <div name="dropdown" className="dropdown" onMouseOver={this.onHover}>
@@ -103,7 +103,7 @@ class Header extends React.Component {
           </div>
         </div>
         <div name='rc'>
-          <img src='rc.png' height='628' width='1440'></img>
+          <img src='https://s3.us-east-2.amazonaws.com/dummyprofilepictures/rc.png' height='628' width='1440'></img>
         </div>
       </div>
     );
