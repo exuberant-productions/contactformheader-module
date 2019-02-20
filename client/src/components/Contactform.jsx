@@ -26,7 +26,7 @@ class Contactform extends React.Component {
           <input type="text" name="email" placeholder="Email"></input>
         </div>
         <div>
-          <input type="text" name="message" value="I am interested in 1155 Leavenworth St #11, San Francisco, CA 94109"></input>
+          <textarea name="message" value="I am interested in 1155 Leavenworth St #11, San Francisco, CA 94109"></textarea>
         </div>
         <div>
           <input type="checkbox" name="financing" value="financing"></input>

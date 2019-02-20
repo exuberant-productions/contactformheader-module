@@ -1,9 +1,15 @@
 /* eslint-env browser */
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './components/App.jsx';
+import AppHeader from './components/AppHeader.jsx';
+import AppAgents from './components/AppAgents.jsx';
 
 ReactDOM.render(
-  <App />,
-  document.getElementById('app'),
+  <AppHeader />,
+  document.getElementById('app-matt-top'),
+);
+
+ReactDOM.render(
+  <AppAgents />,
+  document.getElementById('app-matt-bottom'),
 );
