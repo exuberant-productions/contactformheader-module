@@ -1,13 +1,11 @@
 const mysql = require('mysql');
 
 const connection = mysql.createConnection({
-  host: 'localhost',
+  host: 'db',
   user: 'root',
-  password: '',
+  password: 'password',
   database: 'headercontactform',
 });
-
-connection.connect();
 
 const getHomeInfo = (homeID, callback) => {
   connection.query(`SELECT * FROM home_info WHERE id = ${homeID}`, (err, rows) => {
