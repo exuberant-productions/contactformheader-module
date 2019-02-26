@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  db:
+    build: dockerize_db/
+    image: doodoodoom/matt-db:latest
+
+  server:
+    build: .
+    image: doodoodoom/matt-server:latest
+    depends_on: 
+      - 'db'
+    ports: 
+      - '3003:3003'
+
+  

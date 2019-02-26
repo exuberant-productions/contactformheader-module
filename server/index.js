@@ -57,7 +57,7 @@ app.get('/api/homeinfo/:homeID/premieragent3info', (req, res) => {
   });
 });
 
-app.post('/api/contactforminfo', (req, res) => {
+app.post('/api/contactforminfo/', (req, res) => {
   postContactFormInfo(req.body, (err) => {
     if (err) {
       throw ('ERROR AT CONTACTFORMINFO POST', err);

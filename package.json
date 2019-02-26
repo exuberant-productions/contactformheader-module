@@ -11,7 +11,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "react-dev": "webpack -d --watch",
+    "react-dev": "webpack -p --watch",
     "start": "nodemon server/index.js",
     "db-seed": "mysql -u root -p < schema.sql"
   },

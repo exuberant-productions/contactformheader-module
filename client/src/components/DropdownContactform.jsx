@@ -66,8 +66,12 @@ class DropdownContactform extends React.Component {
 
     if (this.state.name !== '' && this.state.email !== '' && this.state.phone !== '') {
       const self = this;
+      let homeID = new URLSearchParams(window.location.search).get('homeId');
+      if (!homeID || !parseInt(homeID, 10)) {
+        homeID = 1;
+      }
       $.ajax({
-        url: 'http://localhost:3003/api/contactforminfo',
+        url: '/api/contactforminfo',
         method: 'POST',
         contentType: 'application/json',
         data: JSON.stringify({
@@ -76,7 +80,7 @@ class DropdownContactform extends React.Component {
           phone: self.state.phone,
           message: self.state.message,
           isIntoFinancing: self.state.isIntoFinancing,
-          propertyID: 25
+          propertyID: homeID
         }),
         success: function() {
           self.setState({success: true});

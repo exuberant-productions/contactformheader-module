@@ -46,8 +46,12 @@ class Header extends React.Component {
 
   componentDidMount() {
     const self = this;
+    let homeID = new URLSearchParams(window.location.search).get('homeId');
+    if (!homeID || !parseInt(homeID, 10)) {
+      homeID = 1;
+    }
     $.ajax({
-      url: 'http://localhost:3003/api/homeinfo/25',
+      url: `/api/homeinfo/${homeID}`,
       method: 'GET',
       contentType: 'application/json',
       success: function(data) {
